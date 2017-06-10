@@ -1,0 +1,15 @@
+select{
+  background-color: #cccc !important;
+  display: inline-block;
+  height: 2rem;
+  margin: 1rem;
+  width: 14rem;
+}
+h1{
+  font-family: 'Rokkitt', serif;
+  font-size: 2rem;
+}
+img{
+  width: 100%;
+  height: auto;
+}
