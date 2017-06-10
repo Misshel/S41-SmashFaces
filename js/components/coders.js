@@ -5,7 +5,7 @@
 const coderItem = (coder,sede,update,reRender) => {
   console.log(sede +"img");
   if(sede == "mexico"){
-    quien soy
+    // quien soy
     console.log(state.mexico.image);
     let img = $(`<img class="coder" src= "image/${sede}/${coder.imagen}" alt="${coder.name}"/>`);
   }
