@@ -1,15 +1,44 @@
-select{
-  background-color: #cccc !important;
+body{
+  font-family: 'Rokkitt', serif;
+  font-size: 1.5rem;
+}
+
+img{
+  height: auto;
+  width: 100%;
+}
+select#select{
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   display: inline-block;
   height: 2rem;
-  margin: 1rem;
+  margin: 0.5rem;
   width: 14rem;
 }
 h1{
-  font-family: 'Rokkitt', serif;
-  font-size: 2rem;
+  font-size: 3rem;
 }
-img{
-  width: 100%;
-  height: auto;
+p, .btn{
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper{
+  padding: 3rem;
+}
+.line{
+  border: 0.3rem solid;
+  margin: 0.2em 0;
+  width: 3rem;
+}
+.btn{
+  border-radius: 0;
+}
+.start{
+  display: none;
+}
+.reStart{
+  display: block;
+}
+.selecCoder{
+  background-color: #363636;
 }
