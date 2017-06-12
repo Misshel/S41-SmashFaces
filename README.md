@@ -5,3 +5,5 @@ SmashFaces es un juego que ayuda a las estudiantes de un mismo salòn a que se c
 Para la prueba se utilizo el nombre de "Leslie" de la sede Mexico.
 
 El jego marca la puntuacion de los aciertos.
+
+<img src="image/ejemplo.png" />
