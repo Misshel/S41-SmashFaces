@@ -4,13 +4,14 @@ body{
 }
 
 img{
-  height: auto;
+  height: 50vh;
   width: 100%;
 }
 select#select{
+  background-color: #ccc;
+  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  display: inline-block;
   height: 2rem;
   margin: 0.5rem;
   width: 14rem;
@@ -18,20 +19,62 @@ select#select{
 h1{
   font-size: 3rem;
 }
-p, .btn{
+p,
+input,
+ .btn{
   font-family: "Roboto", sans-serif;
 }
-
+label,
+.who{
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+input{
+  background-color: #ffffff !important;
+  margin: 1.3rem 0 4rem !important;
+  padding: 0 1rem !important;
+}
+.row{
+  margin-bottom: 0;
+}
 .wrapper{
-  padding: 3rem;
+  padding: 0 3rem;
 }
 .line{
   border: 0.3rem solid;
   margin: 0.2em 0;
   width: 3rem;
 }
+.text{
+  margin-bottom: 1rem;
+}
+div.col.s5{
+  background-color: #f9a91a;
+  padding: 0;
+}
+div.col.s5,
+div.col.s7{
+  height: 50vh;
+}
+#bonus{
+  border: 0;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 !important;
+  top: 0;
+  width: 8rem;
+}
+.who{
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 4rem 6rem !important;
+}
 .btn{
   border-radius: 0;
+  display: block;
+  margin: auto;
 }
 .start{
   display: none;
@@ -41,4 +84,5 @@ p, .btn{
 }
 .selecCoder{
   background-color: #363636;
+  padding: 3rem !important;
 }
