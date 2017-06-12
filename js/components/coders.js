@@ -5,6 +5,8 @@ const coderItem = (coder,sede,update,reRender) => {
   const name = coder.name;
   const img = $(`<img id="coder" class="coder" src= "image/${sede}/${imagen}" alt="${name}"/>`);
 
+
+
   return img;
 
 }
@@ -48,19 +50,23 @@ const codersGrid = () =>{
   container.append(row);
   container.append(rowCoder);
   var click2 = 0 ;
+  console.log();
   let showBonus = $('<input id="bonus" type="text" name="" value=" " readonly>');
   var click = 0 ;
 
   const bonus = (review,alt,)=>{
     const mas =_=>{
       click++;
-      let acierto = 0;
       let valor =  $('#bonus').val();
       $('#bonus').val(click/2 + " punto(s)");
     }
 // NECESITA QUITAR PUNTOS ACTIVAR NUEVAMENTE EL BOTON
     const menos=_=>{
-      $("button").off("click");
+      alert("Prueba otra vez")
+      click--;
+      let valor =  $('#bonus').val();
+      $('#bonus').val(click/2 + " punto(s)");
+      // $("button").off("click");
     }
 
     if(alt != review |''){
@@ -73,7 +79,11 @@ const codersGrid = () =>{
   }
 
   const event = (e)=>{
+    click2++;
     let sede =  $('select#select').val().toLowerCase();
+
+    console.log(("soy aede"+sede));
+
     const sedeCoder = sede;
     if(sede == "mexico"){
       sede = state.mexico;
@@ -100,11 +110,11 @@ const codersGrid = () =>{
       puntos.append(bonus(review,alt));
     }
     if(click2 > 0){
+      console.log(click);
       $("button").addClass( "start");
       $("button").next().removeClass( "start");
       $("button").next().addClass( "reStart");
     }
-
   }
 
   button.on('click',event);
