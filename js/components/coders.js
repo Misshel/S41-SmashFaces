@@ -5,8 +5,6 @@ const coderItem = (coder,sede,update,reRender) => {
   const name = coder.name;
   const img = $(`<img id="coder" class="coder" src= "image/${sede}/${imagen}" alt="${name}"/>`);
 
-
-
   return img;
 
 }
