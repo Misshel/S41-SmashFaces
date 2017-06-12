@@ -1,9 +1,6 @@
 'use strict';
 
-const filterByName = (sede,query) => {
- const name = sede.filter( (coder) => {
-   return (coder.name.toLowerCase().indexOf(query.toLowerCase())!= -1);
- });
-
- return name;
+function randomByName(min,max) {
+    const numCoder = Math.floor(Math.random()*(max-min+1)+min);
+ return numCoder;
 }
